@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+</head>
+
+<body>
+  <div style="background-color: rgb(255, 255, 255);height: 50px;margin-top: -8px;position: fixed;width: 100%;">
+    <div id="tooltip">
+        <a href="mobile.html">  <span id="tooltipText">mobile</span></a>
+        <img src="mobile.png" >
+
+        <a href="desktop.html">  <span id="tooltipText">desktop</span></a>
+        <img src="desktop.png" >
+
+        <a href="tab.html">  <span id="tooltipText">tablet</span></a>
+        <img src="tab.png" >
+
+
+     </div> 
+</div>
+
+
+
+
+
+    <div id="nav" class="mobile-view" style="background-color: rgb(2, 70, 104);">
+     
+        <img src="https://zelt.app/wp-content/themes/zelt/assets/img/logo.svg" alt="" >
+   
+
+        <div id="center-nav">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About us</a>
+            <a href="ourteam.html">Our Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+       <a href="signin.html" style="text-decoration: none;">
+        
+  
+        <button class="butt">
+            <p>Sign in</p>
+          </button>
+
+       </a>
+    </div>
+
+
+
+    
+        <div id="lpage">
+
+        <div class="text animate__animated animate__rubberBand animate__slower	4s">
+        <h1>Professional Business 
+
+           <a href="#footer" style="text-decoration: none;">
+            <span style="color:  rgb(2, 70, 104); ">Consulting</span>
+        </a>
+        
+        
+        </h1>
+        <p>Zelt provides reliable business planning, management, and advisory services backed by years of experience in the industry.</p>
+        <a href="aboutus.html">
+           
+            <div id="buttons">
+            <button class="button">
+                <div class="display">
+                  <div id="msg">Read more</div>
+                </div>
+                
+                <span></span>
+                <span></span>
+              </button>
+        </a>
+
+        <a href="contactus.html">
+            <button class="button" style="margin-left: 20px;">
+                <div class="display">
+                  <div id="msg">Contact us</div>
+                </div>
+                
+                <span></span>
+                <span></span>
+              </button>
+        </a>
+    </div>
+    
+      </div>
+
+    <div class="image" style="z-index: 1;">
+        
+        <!-- <div class="blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color: rgb(255, 255, 255);"></stop>
+                  <stop offset="100%" style="stop-color: rgb(255, 255, 255);"></stop>
+                </linearGradient>
+              </defs>
+              <path  fill="url(#gradient)">
+                <animate attributeName="d"
+                dur="10000ms" repeatCount="indefinite"
+                
+               values="M450.5,287.5Q479,325,433.5,337.5Q388,350,369,369Q350,388,325.5,398Q301,408,275.5,405.5Q250,403,218.5,423Q187,443,167.5,416.5Q148,390,111,384Q74,378,52,349.5Q30,321,29,285.5Q28,250,55.5,223Q83,196,99,174Q115,152,118.5,113Q122,74,153,60Q184,46,217,48Q250,50,278.5,62Q307,74,345,70.5Q383,67,379,113Q375,159,418.5,170Q462,181,442,215.5Q422,250,450.5,287.5Z;
+               
+               
+               M483,288Q483,326,445,345Q407,364,381.5,379.5Q356,395,334,417.5Q312,440,281,429Q250,418,224,413.5Q198,409,165,410.5Q132,412,102,395.5Q72,379,75.5,342Q79,305,47,277.5Q15,250,22.5,214.5Q30,179,43,144Q56,109,103.5,111.5Q151,114,167,78.5Q183,43,216.5,49.5Q250,56,276.5,71.5Q303,87,349,69Q395,51,399.5,94.5Q404,138,439.5,157.5Q475,177,479,213.5Q483,250,483,288Z;
+               
+               M461,285Q467,320,447.5,349.5Q428,379,400.5,399.5Q373,420,336,410Q299,400,274.5,444Q250,488,215.5,475.5Q181,463,152,443.5Q123,424,97,402Q71,380,81,341Q91,302,74.5,276Q58,250,36,211.5Q14,173,36,141.5Q58,110,96.5,101Q135,92,156,58.5Q177,25,213.5,53.5Q250,82,274,92.5Q298,103,331.5,97Q365,91,376,120.5Q387,150,403,172.5Q419,195,437,222.5Q455,250,461,285Z;
+               
+               M441.5,277.5Q420,305,434.5,350Q449,395,406,400Q363,405,330.5,401Q298,397,274,408Q250,419,219.5,429Q189,439,160.5,425.5Q132,412,94,401.5Q56,391,73,346.5Q90,302,72.5,276Q55,250,67,222Q79,194,66,150.5Q53,107,98,105Q143,103,163.5,75.5Q184,48,217,31Q250,14,284.5,25.5Q319,37,341,66Q363,95,370,126Q377,157,404.5,174Q432,191,447.5,220.5Q463,250,441.5,277.5Z;
+               
+      
+               M441.5,277.5Q420,305,434.5,350Q449,395,406,400Q363,405,330.5,401Q298,397,274,408Q250,419,219.5,429Q189,439,160.5,425.5Q132,412,94,401.5Q56,391,73,346.5Q90,302,72.5,276Q55,250,67,222Q79,194,66,150.5Q53,107,98,105Q143,103,163.5,75.5Q184,48,217,31Q250,14,284.5,25.5Q319,37,341,66Q363,95,370,126Q377,157,404.5,174Q432,191,447.5,220.5Q463,250,441.5,277.5Z;
+      
+               M450.5,287.5Q479,325,433.5,337.5Q388,350,369,369Q350,388,325.5,398Q301,408,275.5,405.5Q250,403,218.5,423Q187,443,167.5,416.5Q148,390,111,384Q74,378,52,349.5Q30,321,29,285.5Q28,250,55.5,223Q83,196,99,174Q115,152,118.5,113Q122,74,153,60Q184,46,217,48Q250,50,278.5,62Q307,74,345,70.5Q383,67,379,113Q375,159,418.5,170Q462,181,442,215.5Q422,250,450.5,287.5Z
+               " >
+              </animate>
+              </path>
+            </svg> -->
+
+            <img src="a.png" class="image"  style="height: 600px; margin-left: 50px;width: 600px;margin-top: -10px;">
+          </div>
+           
+         
+
+       
+
+    </div>
+
+    </div>
+
+    
+    <div id="p2">
+        <h6> OUR SERVICES</h6>
+        <h1>What We Do</h1>
+        <div class="cont1">
+            <span1 data-aos="fade-right" data-aos-delay="200"  data-aos-duration="2000">
+                <img src="q.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+                <h1>Market Analysis</h1>
+                <p>We support your business with fact- <br> based market research.</p>
+            </span1>
+
+            <span1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
+                <img src="s.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+                <h1> Management</h1>
+                <p>Allowing you to successfully deal with  company funds.</p>
+            </span1>
+
+            <span1 data-aos="fade-right"   data-aos-delay="600"  data-aos-duration="2000">
+                <img src="s.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+                <h1>PR & Marketing</h1>
+                <p>Helping expand awareness and manage reputation.</p>
+            </span1>
+        </div>
+
+        <div class="cont1">
+            <span  data-aos="fade-left"   data-aos-delay="600"  data-aos-duration="2000">
+                <img src="s.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+                <h1>Business Planning</h1>
+                <p>Creating an efficient business plan <br> designed to fit your company.</p>
+            </span>
+
+            <span  data-aos="fade-left"   data-aos-delay="800"  data-aos-duration="2000">
+                <img src="a.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+                <h1>Audit</h1>
+                <p>Deep and detailed investigation of <br> your company’s activity.</p>
+            </span>
+            
+        </div>
+
+        <div class="cont1">
+        <span  data-aos="fade-right"   data-aos-delay="400"  data-aos-duration="2000">
+            <img src="H.png" style="width: 200px;margin-left: 25px;margin-top: -5px;"/>
+            <h1>Consulting</h1>
+            <p>Focusing on our clients’ most critical <br>issues and opportunities.</p>
+        </span>
+        </div>
+
+    </div>
+
+    <div id="p3">
+       
+
+        <div class="text p33" style="margin-left: 60px;" data-aos="fade-right"  data-aos-delay="150"
+        data-aos-duration="2000">
+            <h6>
+                ABOUT ZELT 
+            </h6> 
+            <h1>A Few Words About Us</h1>
+            <p>Our consulting company is a leading firm of <br>business managers and advisors with offices <br>across the USA. We aim to provide you</p>
+            <ul>
+            <li> Quality research & analysis</li>
+            <li> Business advisory experience</li>
+            <li> Reliable company management</li>
+             </ul>
+            <a href="aboutus.html">
+                <button><span> more</span></button>
+            </a>
+        </div>
+        
+        
+        <div class="vid p33" style="background-color: rgba(2, 70, 104, 0.734);height: 439px;width: 30%;border-bottom-left-radius: 100px;border-top-left-radius: 1900px;border-bottom-right-radius: 2100px;border-top-right-radius: 100px;margin-right: 950px;"></div>
+
+        <div style="background-color: rgba(50, 66, 80, 0.36);height: 440px;width: 30%;border-bottom-left-radius: 1900px;border-top-left-radius: 100px;border-bottom-right-radius: 100px;border-top-right-radius: 2100px;margin-left: -1439px;"></div>
+
+        <img src="a.png" style="height: 460px;margin-left: -480px;width: 500px;">
+
+
+
+    </div>
+   
+
+
+    <div id="p5">
+      
+        <div class="p44"style="background-color: rgba(2, 70, 104, 0.448);height: 300px;width: 30%;border-bottom-left-radius: 100px;border-top-left-radius: 100px;border-bottom-right-radius: 1900px;border-top-right-radius: 1900px;margin-left:70px"></div>
+
+        <div style="background-color: rgba(50, 66, 80, 0.36);height: 300px;width: 30%;border-bottom-left-radius: 1900px;border-top-left-radius: 1900px;border-bottom-right-radius: 100px;border-top-right-radius: 100px;margin-left: -562px;"></div>
+
+        <img src="q.png" style="height: 350px;margin-left: -450px;width: 350px;">
+
+        
+        <div class="text p55" data-aos="fade-left"  data-aos-delay="150"
+        data-aos-duration="2000">
+            <h6>
+                WHAT WE WORK ON
+            </h6> 
+            <h1>Browse Our Latest<br>
+                <span>
+                    Consulting Projects
+                </span>
+            </h1>
+            <p>Our team has worked on a wide variety of consulting and <br> management projects since our establishment. Take a look <br>at some of them in our project gallery.</p>
+             
+           
+        </div>
+    </div>
+
+    <div id="p4">
+        
+        <div class="text p44" data-aos="fade-right"  data-aos-delay="150"
+        data-aos-duration="2000">
+            <h6>
+                WHY US
+            </h6> 
+            <h1>Reasons People <br>Choose Zelt</h1>
+            <p>We believe there are many good reasons for you to <br> want to choose us for your business consulting <br> purposes. Here are some of them:</p>
+            <ul>
+            <li> Quality research team</li>
+            <li> 15+ years of expertise</li>
+            <li> Flexibility and dedication</li>
+             </ul>
+
+             <a href="aboutus.html">
+                <button><span> more</span></button>
+            </a>
+          
+        </div>
+
+        <div class="p44"style="background-color: rgba(2, 70, 104, 0.448);height: 400px;width: 30%;border-bottom-left-radius: 1900px;border-top-left-radius: 100px;border-bottom-right-radius: 2100px;border-top-right-radius: 100px;"></div>
+
+        <div style="background-color: rgba(50, 66, 80, 0.36);height: 400px;width: 30%;border-bottom-left-radius: 100px;border-top-left-radius: 1900px;border-bottom-right-radius: 100px;border-top-right-radius: 1900px;margin-left: -424px;"></div>
+
+        <img src="s.png" style="height: 350px;margin-left: -400px;width: 350px;">
+    </div>
+     
+    
+
+<div id="p6">
+    <h6>MEET OUR TEAM</h6>
+    <h1>Our Professional Team</h1>
+    <div style="display: flex;align-items: center;justify-content: center;gap: 20px;margin-top: 30px;">
+    
+
+    <div class="card-client" data-aos="fade-down"  data-aos-delay="250"
+    data-aos-duration="2000">
+        <div class="user-picture">
+              <img src="https://cdn4.iconfinder.com/data/icons/avatar-users/512/Avatar_Users2_28-256.png" style="background-size: cover;margin-top: 7px;width: 80px;">
+         
+        </div>
+        <p class="name-client"> NISSI
+            <span>CEO of WritBook
+            </span>
+        </p>
+        <div class="social-media">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+                <span class="tooltip-social">Twitter</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+                <span class="tooltip-social">Instagram</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+                <span class="tooltip-social">Facebook</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg>
+                <span class="tooltip-social">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="card-client" data-aos="fade-down"  data-aos-delay="700"
+    data-aos-duration="2000">
+        <div class="user-picture">
+            <img src="https://cdn4.iconfinder.com/data/icons/avatar-users/512/Avatar_Users2_33-512.png" style="background-size: cover;margin-top: 7px;width: 80px;">
+        </div>
+        <p class="name-client"> DANIELLA
+            <span>CEO of WritBook
+            </span>
+        </p>
+        <div class="social-media">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+                <span class="tooltip-social">Twitter</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+                <span class="tooltip-social">Instagram</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+                <span class="tooltip-social">Facebook</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg>
+                <span class="tooltip-social">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="card-client" data-aos="fade-down"  data-aos-delay="1150"
+    data-aos-duration="2000">
+        <div class="user-picture">
+            <img src="https://cdn4.iconfinder.com/data/icons/avatar-users/512/Avatar_Users2_37-128.png" style="background-size: cover;margin-top: 7px;width: 80px;">
+        </div>
+        <p class="name-client"> OPONG
+            <span>CEO of WritBook
+            </span>
+        </p>
+        <div class="social-media">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+                <span class="tooltip-social">Twitter</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+                <span class="tooltip-social">Instagram</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+                <span class="tooltip-social">Facebook</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg>
+                <span class="tooltip-social">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="card-client" data-aos="fade-down"  data-aos-delay="1600"
+    data-aos-duration="2000">
+        <div class="user-picture">
+            <img src="https://cdn4.iconfinder.com/data/icons/avatar-users/512/Avatar_Users2_15-128.png" style="background-size: cover;margin-top: 7px;width: 80px;">
+        </div>
+        <p class="name-client"> DIALLO
+            <span>CEO of WritBook
+            </span>
+        </p>
+        <div class="social-media">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+                <span class="tooltip-social">Twitter</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+                <span class="tooltip-social">Instagram</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+                <span class="tooltip-social">Facebook</span>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg>
+                <span class="tooltip-social">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+    <div id="p7" class="card">
+        <div class="p71" data-aos="zoom-in-right"  data-aos-delay="250"
+        data-aos-duration="2000" >
+            
+        <h6>POPULAR QUESTIONS</h6>
+        <h1>FAQ</h1>
+        <h2>General</h2>
+        <h2>Our Solutions</h2>
+        <h2>Our Experience</h2>
+        <h2>CustomeR Service</h2>
+
+           
+         </div>
+        
+
+        <div class="gif" style="width: 680px;margin-left: -100px;">
+        <svg class="animated" id="freepik_stories-mobile-marketing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><style>svg#freepik_stories-mobile-marketing:not(.animated) .animable {opacity: 0;}svg#freepik_stories-mobile-marketing.animated #freepik--background-complete--inject-8 {animation: 3s Infinite  linear floating;animation-delay: 0s;}svg#freepik_stories-mobile-marketing.animated #freepik--Megaphone--inject-8 {animation: 3s Infinite  linear shake;animation-delay: 0s;}svg#freepik_stories-mobile-marketing.animated #freepik--Stars--inject-8 {animation: 3s Infinite  linear heartbeat;animation-delay: 0s;}            @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }                    @keyframes shake {                10%, 90% {                    transform: translate3d(-1px, 0, 0);                  }                  20%, 80% {                    transform: translate3d(2px, 0, 0);                  }                  30%, 50%, 70% {                    transform: translate3d(-4px, 0, 0);                  }                  40%, 60% {                    transform: translate3d(4px, 0, 0);                  }            }                    @keyframes heartbeat {                0% {                    transform: scale(1);                }                10% {                    transform: scale(1.1);                }                30% {                    transform: scale(1);                }                40% {                    transform: scale(1);                }                50% {                    transform: scale(1.1);                }                60% {                    transform: scale(1);                }                100% {                    transform: scale(1);                }            }        </style><g id="freepik--background-complete--inject-8" class="animable" style="transform-origin: 257.822px 221.27px;"><path d="M136.31,126.37h0a34.26,34.26,0,0,1-34.26-34.26h0a34.26,34.26,0,0,1,34.26-34.26h0a34.26,34.26,0,0,1,34.26,34.26h0A34.26,34.26,0,0,1,136.31,126.37Z" style="fill: rgb(235, 235, 235); transform-origin: 136.31px 92.11px; --darkreader-inline-fill: #dbd8d4;" id="eltb2k75marx9" class="animable" data-darkreader-inline-fill=""></path><rect x="120.77" y="84.48" width="7.09" height="22.91" style="fill: rgb(255, 255, 255); transform-origin: 124.315px 95.935px; --darkreader-inline-fill: #e8e6e3;" id="ellxqrbtg1ulj" class="animable" data-darkreader-inline-fill=""></rect><path d="M124.28,81.48a4.23,4.23,0,1,0-4.19-4.23A4.22,4.22,0,0,0,124.28,81.48Z" style="fill: rgb(255, 255, 255); transform-origin: 124.32px 77.2502px; --darkreader-inline-fill: #e8e6e3;" id="el2uswcejsf86" class="animable" data-darkreader-inline-fill=""></path><path d="M139.2,95.36c0-3.22,1.48-5.14,4.32-5.14,2.6,0,3.86,1.84,3.86,5.14v12h7.05V92.88c0-6.14-3.47-9.1-8.33-9.1a8,8,0,0,0-6.9,3.78V84.48h-6.81v22.9h6.81Z" style="fill: rgb(255, 255, 255); transform-origin: 143.41px 95.5797px; --darkreader-inline-fill: #e8e6e3;" id="eltehjalszhy" class="animable" data-darkreader-inline-fill=""></path><polygon points="182.22 23.89 186.91 32.46 195.49 37.16 186.91 41.85 182.22 50.42 177.53 41.85 168.95 37.16 177.53 32.46 182.22 23.89" style="fill: rgb(245, 245, 245); transform-origin: 182.22px 37.155px; --darkreader-inline-fill: #e2dfdb;" id="elxtyxs87q74" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="377.87 256.27 381.39 262.71 387.82 266.22 381.39 269.74 377.87 276.18 374.35 269.74 367.92 266.22 374.35 262.71 377.87 256.27" style="fill: rgb(235, 235, 235); transform-origin: 377.87px 266.225px; --darkreader-inline-fill: #dbd8d4;" id="el4bskksd2jum" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="387.82 224.51 389.41 227.41 392.31 229 389.41 230.59 387.82 233.49 386.24 230.59 383.33 229 386.24 227.41 387.82 224.51" style="fill: rgb(224, 224, 224); transform-origin: 387.82px 229px; --darkreader-inline-fill: #d4d1cb;" id="elyg81ag9k4lf" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="148.71 27.11 150.3 30.02 153.2 31.6 150.3 33.19 148.71 36.09 147.13 33.19 144.22 31.6 147.13 30.02 148.71 27.11" style="fill: rgb(224, 224, 224); transform-origin: 148.71px 31.6px; --darkreader-inline-fill: #d4d1cb;" id="el8q4dixwlnsp" class="animable" data-darkreader-inline-fill=""></polygon><path d="M69.13,296.76a10.39,10.39,0,0,0,6.06-9.68c0-5.73-4.45-10.33-9.82-10.29s-9.68,4.73-9.63,10.46a10.34,10.34,0,0,0,6.32,9.6C47.12,299.3,48,315.56,48,315.56l35.39-.3S84,298.81,69.13,296.76Z" style="fill: rgb(224, 224, 224); transform-origin: 65.6919px 296.175px; --darkreader-inline-fill: #d4d1cb;" id="el0faqipgker9" class="animable" data-darkreader-inline-fill=""></path><path d="M408.64,403.94a5.51,5.51,0,0,0-10.87.32A5.51,5.51,0,0,0,386.9,404a7.43,7.43,0,0,0,1.34,5.37,21.83,21.83,0,0,0,3.88,4.1c2,1.77,3.81,3.42,5.79,5.18,2-1.78,3.63-3.45,5.59-5.23a21.59,21.59,0,0,0,3.85-4.14A7.45,7.45,0,0,0,408.64,403.94Z" style="fill: rgb(235, 235, 235); transform-origin: 397.772px 409.066px; --darkreader-inline-fill: #dbd8d4;" id="eltfwoa5380os" class="animable" data-darkreader-inline-fill=""></path><path d="M431.69,193.15l3.79-.75,6-13.18-1.5-7.57s5.79-1.52,7.07,8.53,1.52,7.38,1.52,7.38,12.45-2.42,13.7-1.55c.91.64,3.7,12.94,5.16,19.62a7.39,7.39,0,0,1-3.69,8.33,5.19,5.19,0,0,1-1.31.44c-3.1.62-19.46,1.24-19.46,1.24l-6.55,1.3Z" style="fill: rgb(224, 224, 224); transform-origin: 449.672px 194.254px; --darkreader-inline-fill: #d4d1cb;" id="elr0pu2a7wc0l" class="animable" data-darkreader-inline-fill=""></path><polygon points="420.42 193.22 427.89 218.7 434.39 217.41 429.35 192 420.42 193.22" style="fill: rgb(224, 224, 224); transform-origin: 427.405px 205.35px; --darkreader-inline-fill: #d4d1cb;" id="el3hix3aznb7r" class="animable" data-darkreader-inline-fill=""></polygon></g><g id="freepik--Floor--inject-8" class="animable" style="transform-origin: 248.985px 469.32px;"><path d="M470.47,469.32c0,.15-99.17.26-221.47.26s-221.5-.11-221.5-.26,99.15-.26,221.5-.26S470.47,469.18,470.47,469.32Z" style="fill: rgb(38, 50, 56); transform-origin: 248.985px 469.32px; --darkreader-inline-fill: #cac6bf;" id="el8r6u3ohw3yh" class="animable" data-darkreader-inline-fill=""></path></g><g id="freepik--Icons--inject-8" class="animable" style="transform-origin: 260.142px 257.292px;"><path d="M393.43,183.15h0a40.64,40.64,0,0,1-54.31-18.77h0a40.64,40.64,0,0,1,18.77-54.31h0a40.63,40.63,0,0,1,54.31,18.77h0A40.63,40.63,0,0,1,393.43,183.15Z" style="fill: rgb(2, 70, 104); transform-origin: 375.662px 146.608px; --darkreader-inline-fill: #84d4fd;" id="elfjr328o89hq" class="animable" data-darkreader-inline-fill=""></path><path d="M365.62,155.69a1,1,0,0,0,.95-1.23c-.1-.49-.37-1.73-.47-2.24-.14-.71-.31-.9-1-1.22a8,8,0,0,1-4-4.09c-3.06-6.3-1.09-14.23,6.47-17.9,6.69-3.26,12.36-1,15,4.5,3.49,7.19,3.26,14.8-1.46,17.1a4.29,4.29,0,0,1-6.27-2.89c-.78-3.52-1-7.63-2.1-9.91-1-2-2.92-3.21-5.18-2.11-2.67,1.3-3.47,5.1-1.67,8.79a10.68,10.68,0,0,0,2.71,3.56s2.9,12.88,3.4,15.14c1,4.49,4.22,9,4.53,9.51a.38.38,0,0,0,.67-.15c.09-.44,1.36-5.9.53-10.34-.23-1.26-1.58-7.71-1.58-7.71,1.67,1.23,4.91,1.46,7.6.15,8-3.9,9.9-13.85,5.14-23.63-3.59-7.39-13.21-11.23-22.72-6.6-11.85,5.76-13.69,17.15-10.25,24.23C358,152.94,361.45,156,365.62,155.69Z" style="fill: rgb(255, 255, 255); transform-origin: 372.921px 147.627px; --darkreader-inline-fill: #e8e6e3;" id="elxg1oc4dq8b" class="animable" data-darkreader-inline-fill=""></path><path d="M434,297.76h0a28,28,0,0,1-16.17-36.18h0A28,28,0,0,1,454,245.4h0a28,28,0,0,1,16.17,36.18h0A28,28,0,0,1,434,297.76Z" style="fill: rgb(2, 70, 104); transform-origin: 444px 271.58px; --darkreader-inline-fill: #84d4fd;" id="elg0pcdgycny" class="animable" data-darkreader-inline-fill=""></path><path d="M458.64,276.34a15.09,15.09,0,0,0-28.07-11c-.09.2-.17.41-.25.61a14.82,14.82,0,0,0-.74,8l-5.41,6.53,8.76.5a15.09,15.09,0,0,0,25.58-4.26A3.62,3.62,0,0,0,458.64,276.34Zm-18.72,6.73a12.6,12.6,0,0,1-5.77-4.44l-5.11-.29,3.15-3.8a12.47,12.47,0,0,1,.37-7.76c.15-.38.32-.76.5-1.12a12.69,12.69,0,0,1,23.52,9.24c-.09.32-.19.63-.31.94A12.65,12.65,0,0,1,439.92,283.07Z" style="fill: rgb(255, 255, 255); fill-rule: evenodd; transform-origin: 441.807px 271.359px; --darkreader-inline-fill: #e8e6e3;" id="elrypjluno3p9" class="animable" data-darkreader-inline-fill=""></path><path d="M449.8,276.6c-.29-.3-1.66-1.78-1.94-2s-.48-.38-.84-.12-1.33.77-1.61.92-.5.1-.78-.2a10.09,10.09,0,0,1-2.13-2.77,11,11,0,0,1-1-3.1c-.06-.42.18-.54.42-.64s.5-.27.75-.4l.19-.12a3.53,3.53,0,0,0,.37-.33.65.65,0,0,0,.21-.61c0-.2-.07-2.16-.1-2.95s-.36-.79-.56-.87-.42-.2-.65-.28a1.37,1.37,0,0,0-1.09.07,4.16,4.16,0,0,0-2.3,2.41,4.66,4.66,0,0,0-.27,1.23,8.26,8.26,0,0,0,.33,2.85c.09.29.94,4.71,3.92,7.43s3.17,2.26,3.83,2.44a3.67,3.67,0,0,0,3-.74,3,3,0,0,0,.83-1.55C450.27,277.08,450.08,276.9,449.8,276.6Z" style="fill: rgb(255, 255, 255); fill-rule: evenodd; transform-origin: 444.418px 271.338px; --darkreader-inline-fill: #e8e6e3;" id="el5fmeuzm7b8m" class="animable" data-darkreader-inline-fill=""></path><path d="M69.63,168.24h0a21.37,21.37,0,0,1-21.37-21.37h0A21.37,21.37,0,0,1,69.63,125.5h0A21.37,21.37,0,0,1,91,146.87h0A21.37,21.37,0,0,1,69.63,168.24Z" style="fill: rgb(2, 70, 104); transform-origin: 69.63px 146.87px; --darkreader-inline-fill: #84d4fd;" id="elg44takn31ea" class="animable" data-darkreader-inline-fill=""></path><path d="M58.25,154a13.3,13.3,0,0,0,20.44-11.8A9.58,9.58,0,0,0,81,139.81a9.65,9.65,0,0,1-2.69.74A4.7,4.7,0,0,0,80.39,138a9.14,9.14,0,0,1-3,1.13,4.68,4.68,0,0,0-8,4.27,13.29,13.29,0,0,1-9.63-4.89,4.69,4.69,0,0,0,1.45,6.24,4.6,4.6,0,0,1-2.12-.58,4.68,4.68,0,0,0,3.75,4.64,4.67,4.67,0,0,1-2.11.08,4.68,4.68,0,0,0,4.36,3.24A9.39,9.39,0,0,1,58.25,154Z" style="fill: rgb(255, 255, 255); transform-origin: 69.625px 146.848px; --darkreader-inline-fill: #e8e6e3;" id="elczw4kwjnml5" class="animable" data-darkreader-inline-fill=""></path><path d="M108,407.61h0A36.8,36.8,0,0,1,63.7,380.34h0A36.8,36.8,0,0,1,91,336h0a36.8,36.8,0,0,1,44.33,27.27h0A36.8,36.8,0,0,1,108,407.61Z" style="fill: rgb(69, 90, 100); transform-origin: 99.5142px 371.802px; --darkreader-inline-fill: #b3aca2;" id="elovl8tznyx4" class="animable" data-darkreader-inline-fill=""></path><path d="M95.67,355.72c5.24-1.25,5.87-1.38,8-1.78a11.18,11.18,0,0,1,3.8-.19,6.29,6.29,0,0,1,2.61.93,6.43,6.43,0,0,1,2,1.91,11.22,11.22,0,0,1,1.54,3.48c.59,2.05.76,2.67,2,7.91s1.37,5.87,1.77,8a10.92,10.92,0,0,1,.19,3.8,6,6,0,0,1-.93,2.61,6.29,6.29,0,0,1-1.9,2,11.31,11.31,0,0,1-3.49,1.54c-2,.59-2.66.76-7.9,2s-5.87,1.38-8,1.78a11,11,0,0,1-3.81.19,6.2,6.2,0,0,1-2.61-.93A6.08,6.08,0,0,1,87,387a11.06,11.06,0,0,1-1.55-3.48c-.58-2.05-.75-2.66-2-7.9s-1.38-5.87-1.78-8a11.52,11.52,0,0,1-.19-3.81,6.64,6.64,0,0,1,2.84-4.61,11.17,11.17,0,0,1,3.48-1.55c2-.58,2.67-.75,7.91-2m-.84-3.54c-5.33,1.27-6,1.45-8.07,2.05a14.62,14.62,0,0,0-4.55,2,10.36,10.36,0,0,0-4.37,7.1,14.85,14.85,0,0,0,.22,5c.41,2.11.54,2.79,1.81,8.12s1.45,6,2,8.06a14.51,14.51,0,0,0,2,4.55A9.91,9.91,0,0,0,87.06,392a9.8,9.8,0,0,0,4,1.43,14.79,14.79,0,0,0,5-.22c2.11-.4,2.79-.54,8.12-1.81s6-1.45,8.06-2a15,15,0,0,0,4.55-2,9.91,9.91,0,0,0,2.94-3.09,10.07,10.07,0,0,0,1.44-4,14.84,14.84,0,0,0-.23-5c-.4-2.12-.54-2.79-1.81-8.12s-1.45-6-2-8.07a15.1,15.1,0,0,0-2-4.55,9.88,9.88,0,0,0-3.09-2.93,9.73,9.73,0,0,0-4-1.44,14.79,14.79,0,0,0-5,.22c-2.12.41-2.79.54-8.12,1.81" style="fill: rgb(255, 255, 255); transform-origin: 99.5232px 371.815px; --darkreader-inline-fill: #e8e6e3;" id="eleefopy4khlk" class="animable" data-darkreader-inline-fill=""></path><path d="M97.1,361.73a10.36,10.36,0,1,0,12.48,7.68,10.37,10.37,0,0,0-12.48-7.68m4,16.63a6.73,6.73,0,1,1,5-8.11,6.73,6.73,0,0,1-5,8.11" style="fill: rgb(255, 255, 255); transform-origin: 99.5013px 371.809px; --darkreader-inline-fill: #e8e6e3;" id="el9rendkn66j5" class="animable" data-darkreader-inline-fill=""></path><path d="M109.84,358.28a2.42,2.42,0,1,1-2.92-1.8,2.41,2.41,0,0,1,2.92,1.8" style="fill: rgb(255, 255, 255); transform-origin: 107.484px 358.832px; --darkreader-inline-fill: #e8e6e3;" id="el4lr8w76lddk" class="animable" data-darkreader-inline-fill=""></path><path d="M386.81,375.22h0a17.16,17.16,0,0,1-17.17-17.16h0a17.16,17.16,0,0,1,17.17-17.16h0A17.16,17.16,0,0,1,404,358.06h0A17.16,17.16,0,0,1,386.81,375.22Z" style="fill: rgb(69, 90, 100); transform-origin: 386.82px 358.06px; --darkreader-inline-fill: #b3aca2;" id="elk8cambygy7" class="animable" data-darkreader-inline-fill=""></path><path d="M384.19,368.43h4.18V358h2.91l.32-3.5h-3.23v-2c0-.82.17-1.15,1-1.15h2.27v-3.64h-2.9c-3.11,0-4.51,1.37-4.51,4v2.8H382V358h2.17Z" style="fill: rgb(255, 255, 255); transform-origin: 386.82px 358.07px; --darkreader-inline-fill: #e8e6e3;" id="elaanr6mgebd" class="animable" data-darkreader-inline-fill=""></path></g><g id="freepik--Device--inject-8" class="animable" style="transform-origin: 259.38px 267.185px;"><path d="M328.27,470.05,190.38,470a30,30,0,0,1-30-30l.06-345.68a30,30,0,0,1,30.06-30l137.88.08a30,30,0,0,1,30,30L358.32,440A30,30,0,0,1,328.27,470.05Z" style="fill: rgb(38, 50, 56); transform-origin: 259.38px 267.185px; --darkreader-inline-fill: #cac6bf;" id="elo9904yiyfed" class="animable" data-darkreader-inline-fill=""></path><path d="M328.23,76.52l-26.74,0A6.65,6.65,0,0,0,295,83.28v4.85a6.63,6.63,0,0,1-6.49,6.78l-52.11,0a6.64,6.64,0,0,1-6.49-6.79V83.24a6.66,6.66,0,0,0-6.49-6.79H214l-23.39,0a21,21,0,0,0-21.05,21l-.07,337.41a21,21,0,0,0,21,21l137.62.08a21,21,0,0,0,21-21l.07-337.42A21,21,0,0,0,328.23,76.52Z" style="fill: rgb(255, 255, 255); transform-origin: 259.335px 266.195px; --darkreader-inline-fill: #e8e6e3;" id="el7ioftkwpnjm" class="animable" data-darkreader-inline-fill=""></path><path d="M330.24,103.93c0,.09-3.48.19-7.76.22s-7.77,0-7.77-.09,3.47-.2,7.76-.23S330.24,103.84,330.24,103.93Z" style="fill: rgb(38, 50, 56); transform-origin: 322.475px 103.991px; --darkreader-inline-fill: #cac6bf;" id="elnzw60nffk2" class="animable" data-darkreader-inline-fill=""></path><path d="M330.27,107.9c0,.09-3.47.19-7.76.23s-7.77,0-7.77-.1,3.48-.19,7.77-.23S330.27,107.81,330.27,107.9Z" style="fill: rgb(38, 50, 56); transform-origin: 322.505px 107.966px; --darkreader-inline-fill: #cac6bf;" id="elc5b4l1rncxr" class="animable" data-darkreader-inline-fill=""></path><path d="M330.31,111.87c0,.09-3.48.2-7.77.23s-7.76,0-7.77-.1,3.48-.19,7.77-.23S330.31,111.78,330.31,111.87Z" style="fill: rgb(38, 50, 56); transform-origin: 322.54px 111.934px; --darkreader-inline-fill: #cac6bf;" id="ellk9h5yc23f" class="animable" data-darkreader-inline-fill=""></path><path d="M184,115.75l.41,0,1.13,0,4.18-.1-.12.11c0-.92,0-1.93-.05-3,0-.56,0-1.09,0-1.74a1.61,1.61,0,0,1,1.4-1.29c.68,0,1.27,0,2,0a1.63,1.63,0,0,1,1.37,1.61c0,1.42,0,2.89.05,4.42l-.19-.19,5.27,0-.2.2c0-2.12,0-4.32-.06-6.57,0-.56,0-1.11,0-1.67a1.67,1.67,0,0,0-.74-1.24l-2.3-2.28-2.23-2.19-1.07-1.06c-.37-.36-.66-.73-1.09-.82a1.43,1.43,0,0,0-1.21.23c-.32.27-.66.65-1,1l-1.9,1.91c-1.19,1.23-2.43,2.36-3.33,3.43a3.76,3.76,0,0,0-.26,2c0,.65,0,1.27,0,1.85,0,1.14,0,2.14,0,3s0,1.39,0,1.91a5.54,5.54,0,0,1,0,.69,5.69,5.69,0,0,1,0-.63c0-.51,0-1.14,0-1.89s0-1.87-.07-3c0-.6,0-1.23,0-1.9,0-.34,0-.68,0-1a2.18,2.18,0,0,1,.29-1.1c1-1.19,2.14-2.25,3.34-3.52l1.88-1.93c.34-.33.61-.66,1-1a1.79,1.79,0,0,1,1.53-.31,2.93,2.93,0,0,1,1.27.91l1.08,1.06,2.23,2.19,2.31,2.26a4.61,4.61,0,0,1,.59.64,1.73,1.73,0,0,1,.28.89c0,.56,0,1.12,0,1.68,0,2.25,0,4.45.05,6.57v.2h-.2l-5.27,0H194v-.19c0-1.53,0-3,0-4.42a1.27,1.27,0,0,0-1.06-1.28c-.61,0-1.33,0-1.92,0a1.29,1.29,0,0,0-1.13,1c0,.53,0,1.14,0,1.68,0,1.09,0,2.11,0,3v.12h-.12l-4.25,0-1.11,0A2.29,2.29,0,0,1,184,115.75Z" style="fill: rgb(38, 50, 56); transform-origin: 191.915px 107.852px; --darkreader-inline-fill: #cac6bf;" id="eleg4ft7nr2n" class="animable" data-darkreader-inline-fill=""></path><path d="M275,379.41a8.36,8.36,0,0,1-1.45.1l-3.94.08c-3.32.05-7.92.08-13,.08s-9.68,0-13-.08l-3.94-.08a8.5,8.5,0,0,1-1.45-.1,7.36,7.36,0,0,1,1.45-.1l3.94-.09c3.32,0,7.92-.07,13-.07s9.67,0,13,.07l3.94.09A7.25,7.25,0,0,1,275,379.41Z" style="fill: rgb(69, 90, 100); transform-origin: 256.61px 379.41px; --darkreader-inline-fill: #b3aca2;" id="elih3tausp4sp" class="animable" data-darkreader-inline-fill=""></path><path d="M332.77,388.45c0,.15-21.17.26-47.28.26s-47.28-.11-47.28-.26,21.17-.26,47.28-.26S332.77,388.31,332.77,388.45Z" style="fill: rgb(69, 90, 100); transform-origin: 285.49px 388.45px; --darkreader-inline-fill: #b3aca2;" id="elfxh16erk3ob" class="animable" data-darkreader-inline-fill=""></path><path d="M303.22,397c0,.15-14.55.26-32.5.26s-32.51-.11-32.51-.26,14.55-.26,32.51-.26S303.22,396.82,303.22,397Z" style="fill: rgb(69, 90, 100); transform-origin: 270.715px 397px; --darkreader-inline-fill: #b3aca2;" id="el9k2pom0xxki" class="animable" data-darkreader-inline-fill=""></path><path d="M334.64,413.53l-2.94-2.95-2.8,2.79,0-8.44h5.73Zm-2.94-3.32.09.09,2.59,2.6v-7.7h-5.21v7.55Z" style="fill: rgb(38, 50, 56); transform-origin: 331.77px 409.23px; --darkreader-inline-fill: #cac6bf;" id="elpnkgicpgxx" class="animable" data-darkreader-inline-fill=""></path><path d="M256.41,412.43l-1-.46a2.65,2.65,0,1,1,.8-.58ZM254,406.81a2.69,2.69,0,0,0,.05,5.37,2.86,2.86,0,0,0,1.29-.41l0,0,.77.34-.18-.75,0,0a2.68,2.68,0,0,0-2-4.49Z" style="fill: rgb(38, 50, 56); transform-origin: 254.214px 409.62px; --darkreader-inline-fill: #cac6bf;" id="elk9oyaj9dzb" class="animable" data-darkreader-inline-fill=""></path><path d="M263.07,412l-1.18-2.9-2.23-2,5.4,0Zm-2.91-4.73,1.9,1.74,1,2.47,1.7-4.25Z" style="fill: rgb(38, 50, 56); transform-origin: 262.36px 409.55px; --darkreader-inline-fill: #cac6bf;" id="elnovosgb9kom" class="animable" data-darkreader-inline-fill=""></path><g id="eluthcqlw4yte"><rect x="261.78" y="407.95" width="3.52" height="0.2" style="fill: rgb(38, 50, 56); transform-origin: 263.54px 408.05px; transform: rotate(-33.05deg); --darkreader-inline-fill: #cac6bf;" class="animable" data-darkreader-inline-fill=""></rect></g><path d="M247.9,407.66a1.67,1.67,0,0,0-3.29.11,1.67,1.67,0,0,0-3.3-.06,2.27,2.27,0,0,0,.41,1.63,6.6,6.6,0,0,0,1.18,1.24c.61.53,1.16,1,1.76,1.56.6-.54,1.1-1.05,1.7-1.59a6.6,6.6,0,0,0,1.16-1.26A2.22,2.22,0,0,0,247.9,407.66Z" style="fill: rgb(2, 70, 104); transform-origin: 244.609px 409.233px; --darkreader-inline-fill: #84d4fd;" id="ele45elfxahpp" class="animable" data-darkreader-inline-fill=""></path><path d="M340.66,421s0-.33,0-.94,0-1.54,0-2.74c0-2.41,0-6-.05-10.56,0-9.19-.05-22.56-.09-39.33l.17.17-159.91.09h0l.26-.26c0,18.62,0,36.67,0,53.57l-.25-.25,114.43.11,33.4.07,9,0h2.32l.8,0h-.77l-2.29,0-8.91,0-33.35.07-114.6.12h-.26V421c0-16.9,0-34.95,0-53.57v-.26h.28l159.91.09h.17v.17c0,16.81-.07,30.22-.09,39.44,0,4.58,0,8.11,0,10.52,0,1.18,0,2.08,0,2.7S340.66,421,340.66,421Z" style="fill: rgb(38, 50, 56); transform-origin: 260.74px 394.145px; --darkreader-inline-fill: #cac6bf;" id="elzjxlrn7fa1" class="animable" data-darkreader-inline-fill=""></path><g id="el3pbgrzwlddz"><rect x="191.73" y="372.05" width="35.42" height="44.3" style="fill: rgb(235, 235, 235); transform-origin: 209.44px 394.2px; transform: rotate(-89.67deg); --darkreader-inline-fill: #dbd8d4;" class="animable" data-darkreader-inline-fill=""></rect></g><path d="M231.69,376.62h-.85l-2.42,0h-9.09l-32-.07.24-.23c-.05,10.55-.11,22.63-.17,35.41.05.07-.49-.49-.26-.26h3.05l3,0,6,0,11.5.07,20.74.15-.21.22c.1-10.64.19-19.46.26-25.66,0-3.08.07-5.5.09-7.19,0-.81,0-1.44,0-1.9s0-.67,0-.67,0,.2,0,.62,0,1.07,0,1.87c0,1.67,0,4.08,0,7.14,0,6.23,0,15.1,0,25.79v.21h-.22l-20.74-.08-11.5-.06-6,0-3,0h-3.05l-.27-.27c.09-12.79.16-24.87.23-35.41v-.24h.24l32.1.29,9,.12,2.37,0,.6,0Z" style="fill: rgb(38, 50, 56); transform-origin: 209.24px 394.09px; --darkreader-inline-fill: #cac6bf;" id="eltefysta1usq" class="animable" data-darkreader-inline-fill=""></path><g id="elzr2ddrr54z8"><rect x="193.93" y="373.61" width="30.96" height="41.19" style="fill: rgb(224, 224, 224); transform-origin: 209.41px 394.205px; transform: rotate(-89.67deg); --darkreader-inline-fill: #d4d1cb;" class="animable" data-darkreader-inline-fill=""></rect></g><polygon points="188.72 409.56 203.22 390.4 212.06 402.49 218.14 396.09 229.91 409.8 188.72 409.56" style="fill: rgb(245, 245, 245); transform-origin: 209.315px 400.1px; --darkreader-inline-fill: #e2dfdb;" id="elv09p2m7bujl" class="animable" data-darkreader-inline-fill=""></polygon><path d="M215.93,388.12a3.25,3.25,0,1,1-3.23-3.26A3.24,3.24,0,0,1,215.93,388.12Z" style="fill: rgb(245, 245, 245); transform-origin: 212.68px 388.11px; --darkreader-inline-fill: #e2dfdb;" id="el0eqoz1r7dv9p" class="animable" data-darkreader-inline-fill=""></path><path d="M262.09,146.87a1.44,1.44,0,0,1-.48,0l-1.35.05-5,.09c-4.21,0-10,.07-16.46.07s-12.25,0-16.46-.07l-5-.09-1.36-.05a1.34,1.34,0,0,1-.47,0,1.74,1.74,0,0,1,.47-.05l1.36,0,5-.08c4.21-.05,10-.08,16.46-.08s12.25,0,16.46.08l5,.08,1.35,0A1.87,1.87,0,0,1,262.09,146.87Z" style="fill: rgb(38, 50, 56); transform-origin: 238.8px 146.87px; --darkreader-inline-fill: #cac6bf;" id="elahfhte4vmdj" class="animable" data-darkreader-inline-fill=""></path><path d="M327.53,342.65l-4.36-4.38L319,342.42l0-12.54,8.52,0Zm-4.36-4.92.13.13,3.85,3.86,0-11.44h-7.76v11.22Z" style="fill: rgb(38, 50, 56); transform-origin: 323.265px 336.265px; --darkreader-inline-fill: #cac6bf;" id="eli73wy4r7qwh" class="animable" data-darkreader-inline-fill=""></path><path d="M216.67,341.33l-2-.91a5.16,5.16,0,1,1,1.57-1.13Zm-4.77-11.05a5.28,5.28,0,0,0,.09,10.56,5.49,5.49,0,0,0,2.54-.8l.09-.05,1.5.67-.34-1.48.07-.07a5.27,5.27,0,0,0-3.95-8.83Z" style="fill: rgb(38, 50, 56); transform-origin: 212.159px 335.805px; --darkreader-inline-fill: #cac6bf;" id="eljmmx5t2fjcg" class="animable" data-darkreader-inline-fill=""></path><path d="M229.79,340.46l-2.34-5.71-4.38-4,10.64-.08Zm-5.73-9.33,3.74,3.43,2,4.86,3.34-8.36Z" style="fill: rgb(38, 50, 56); transform-origin: 228.39px 335.565px; --darkreader-inline-fill: #cac6bf;" id="elq637m7b1cuo" class="animable" data-darkreader-inline-fill=""></path><g id="elkg6jmg52h6l"><rect x="227.24" y="332.52" width="6.92" height="0.39" style="fill: rgb(38, 50, 56); transform-origin: 230.7px 332.715px; transform: rotate(-33.05deg); --darkreader-inline-fill: #cac6bf;" class="animable" data-darkreader-inline-fill=""></rect></g><path d="M199.93,332a3.29,3.29,0,0,0-6.49.21,3.29,3.29,0,0,0-6.49-.11,4.45,4.45,0,0,0,.81,3.2,13.51,13.51,0,0,0,2.33,2.45c1.19,1,2.28,2,3.47,3.07,1.16-1.06,2.16-2.06,3.33-3.13a13.47,13.47,0,0,0,2.29-2.48A4.46,4.46,0,0,0,199.93,332Z" style="fill: rgb(2, 70, 104); transform-origin: 193.445px 335.083px; --darkreader-inline-fill: #84d4fd;" id="elqojt6j47ix" class="animable" data-darkreader-inline-fill=""></path><circle cx="198.96" cy="146.87" r="7.22" style="fill: rgb(235, 235, 235); transform-origin: 198.96px 146.87px; --darkreader-inline-fill: #dbd8d4;" id="eldtp95yxopvu" class="animable" data-darkreader-inline-fill=""></circle><path d="M324.81,301.25c0,.15-30.26.27-67.58.27s-67.59-.12-67.59-.27,30.26-.26,67.59-.26S324.81,301.11,324.81,301.25Z" style="fill: rgb(69, 90, 100); transform-origin: 257.225px 301.255px; --darkreader-inline-fill: #b3aca2;" id="el9z8f7zrpvdq" class="animable" data-darkreader-inline-fill=""></path><path d="M324.81,290c0,.14-30.26.26-67.58.26s-67.59-.12-67.59-.26,30.26-.26,67.59-.26S324.81,289.86,324.81,290Z" style="fill: rgb(69, 90, 100); transform-origin: 257.225px 290px; --darkreader-inline-fill: #b3aca2;" id="el40vgerc0g4" class="animable" data-darkreader-inline-fill=""></path><path d="M263.21,312.66c0,.14-16.47.26-36.78.26s-36.79-.12-36.79-.26,16.47-.26,36.79-.26S263.21,312.52,263.21,312.66Z" style="fill: rgb(69, 90, 100); transform-origin: 226.425px 312.66px; --darkreader-inline-fill: #b3aca2;" id="elcbva0yafztn" class="animable" data-darkreader-inline-fill=""></path><path d="M254.14,435.29a2.88,2.88,0,1,1-2.86-2.93A2.89,2.89,0,0,1,254.14,435.29Z" style="fill: rgb(38, 50, 56); transform-origin: 251.26px 435.24px; --darkreader-inline-fill: #cac6bf;" id="elrs9emdsv49g" class="animable" data-darkreader-inline-fill=""></path><path d="M263,435.33a2.87,2.87,0,1,1-2.86-2.93A2.88,2.88,0,0,1,263,435.33Z" style="fill: rgb(38, 50, 56); transform-origin: 260.131px 435.27px; --darkreader-inline-fill: #cac6bf;" id="eleiqzicmp5z" class="animable" data-darkreader-inline-fill=""></path><path d="M271.93,435.37a2.87,2.87,0,1,1-2.86-2.93A2.89,2.89,0,0,1,271.93,435.37Z" style="fill: rgb(38, 50, 56); transform-origin: 269.06px 435.31px; --darkreader-inline-fill: #cac6bf;" id="elvd5xfht7r3g" class="animable" data-darkreader-inline-fill=""></path><rect x="181.69" y="161.15" width="159.93" height="97.8" style="fill: rgb(224, 224, 224); transform-origin: 261.655px 210.05px; --darkreader-inline-fill: #d4d1cb;" id="elxmsc3yszo69" class="animable" data-darkreader-inline-fill=""></rect><polygon points="196.46 258.98 242.28 197.64 270.7 236 289.95 215.48 327.72 258.94 196.46 258.98" style="fill: rgb(245, 245, 245); transform-origin: 262.09px 228.31px; --darkreader-inline-fill: #e2dfdb;" id="elrg46jpcvndl" class="animable" data-darkreader-inline-fill=""></polygon><path d="M282.74,190.11a10.34,10.34,0,1,1-10.34-10.33A10.34,10.34,0,0,1,282.74,190.11Z" style="fill: rgb(245, 245, 245); transform-origin: 272.4px 190.12px; --darkreader-inline-fill: #e2dfdb;" id="ell4hw6ol7scm" class="animable" data-darkreader-inline-fill=""></path><path d="M341.19,349.85c0-2.09-.1-90.44-.24-221.24l.24.24-159.91,0h0l.26-.26c0,82.74,0,159.31,0,221.24l-.22-.21,159.93.21-159.93.22h-.21v-.22c0-61.93,0-138.5-.05-221.24v-.26h.28l159.91,0h.24v.23c-.05,65.47-.09,120.8-.12,159.78,0,19.46-.05,34.83-.06,45.35,0,5.24,0,9.27,0,12,0,1.35,0,2.38,0,3.08S341.19,349.85,341.19,349.85Z" style="fill: rgb(38, 50, 56); transform-origin: 261.275px 239.19px; --darkreader-inline-fill: #cac6bf;" id="elspkvbz0akca" class="animable" data-darkreader-inline-fill=""></path></g><g id="freepik--Megaphone--inject-8" class="animable" style="transform-origin: 220.559px 289.481px;"><path d="M266,377.3l3.54-11.89c.62-2.58,1.44-5.62,2.54-9.09,1-3.12,3.54-6.4,5.86-8.76,3.61-3.67,5.33-3.69,7.75-5.64.22-.14.47-.35.68-.46a3.81,3.81,0,0,0,1.18-1c2.09-2.26.08-5.77-4.17-5.43-3.19.25-8.41,1.16-16.89,9.91-.11.14-.22.25-.32.38-4.45,5.79-8.63-10.73-9.39-16.88a6.43,6.43,0,0,0-8.71-5l-20.66,9.66a9.67,9.67,0,0,0-6,.2,6.16,6.16,0,0,0-3.94,7.29L225.86,374l-24.61,81.9H254.3Z" style="fill: rgb(255, 190, 157); transform-origin: 244.816px 389.446px; --darkreader-inline-fill: #ffb087;" id="eli1ujvf5373e" class="animable" data-darkreader-inline-fill=""></path><path d="M306.8,302.08l-16.4,32.14-8.2-2.28L241,365.47a8.34,8.34,0,0,1-11.59-1l-15.7-18.23s31.65-13.63,37.5-24.91-.91-13.85-.91-13.85l14.89-16.92Z" style="fill: rgb(2, 70, 104); transform-origin: 260.255px 328.958px; --darkreader-inline-fill: #84d4fd;" id="elsztlvx80t7b" class="animable" data-darkreader-inline-fill=""></path><path d="M285.53,236.44s-24-5.31-57.79-37.79S178.09,123,174,123.24s-22.19-8.17-56.53,66.52-20.81,92-14,91.9,53.22-13.07,82.2-9.78,66.23,18.4,66.23,18.4Z" style="fill: rgb(2, 70, 104); transform-origin: 190.284px 206.671px; --darkreader-inline-fill: #84d4fd;" id="elyc6mb6n22fe" class="animable" data-darkreader-inline-fill=""></path><path d="M336.52,277.15l-8.19,15.57-3.67,7a20.32,20.32,0,0,1-26.49,9l-51.45-17.93,30-68.4,51.4,27.39A20.32,20.32,0,0,1,336.52,277.15Z" style="fill: rgb(2, 70, 104); transform-origin: 292.787px 266.488px; --darkreader-inline-fill: #84d4fd;" id="el1stz7l072se" class="animable" data-darkreader-inline-fill=""></path><g id="eloejw9soltp"><g style="opacity: 0.4; transform-origin: 292.787px 266.488px;" class="animable"><path d="M336.52,277.15l-8.19,15.57-3.67,7a20.32,20.32,0,0,1-26.49,9l-51.45-17.93,30-68.4,51.4,27.39A20.32,20.32,0,0,1,336.52,277.15Z" id="el75c9h6qej3" class="animable" style="transform-origin: 292.787px 266.488px;"></path></g></g><path d="M120.21,191.12c-18.27,40.46-25.88,76.52-17,80.53s30.91-25.53,49.18-66,25.88-76.51,17-80.53S138.48,150.66,120.21,191.12Z" style="fill: rgb(2, 70, 104); transform-origin: 136.3px 198.384px; --darkreader-inline-fill: #84d4fd;" id="elunca1g3uzj" class="animable" data-darkreader-inline-fill=""></path><g id="eljzqaxgvmshj"><g style="opacity: 0.5; transform-origin: 136.3px 198.384px;" class="animable"><path d="M120.21,191.12c-18.27,40.46-25.88,76.52-17,80.53s30.91-25.53,49.18-66,25.88-76.51,17-80.53S138.48,150.66,120.21,191.12Z" id="elungegonhy2" class="animable" style="transform-origin: 136.3px 198.384px;"></path></g></g><polygon points="340.94 299.65 326.99 295.27 335.62 278.87 346.08 285.37 340.94 299.65" style="fill: rgb(2, 70, 104); transform-origin: 336.535px 289.26px; --darkreader-inline-fill: #84d4fd;" id="elb3ot98srgkq" class="animable" data-darkreader-inline-fill=""></polygon><g id="elavt5ouo73zv"><g style="opacity: 0.6; transform-origin: 331.93px 287.52px;" class="animable"><polygon points="335.62 278.87 326.99 295.27 329.86 296.17 336.87 279.64 335.62 278.87" id="elg9vywaa01u" class="animable" style="transform-origin: 331.93px 287.52px;"></polygon></g></g><path d="M326,282.65c-.2.45-7.16-2.25-15.54-6s-15-7.23-14.81-7.68,7.16,2.26,15.55,6.05S326.21,282.2,326,282.65Z" style="fill: rgb(2, 70, 104); transform-origin: 310.825px 275.81px; --darkreader-inline-fill: #84d4fd;" id="el2wp42m2tamr" class="animable" data-darkreader-inline-fill=""></path><path d="M330.3,272.88c-.22.44-6.52-2.21-14.07-5.93s-13.49-7.09-13.27-7.54,6.51,2.21,14.06,5.93S330.52,272.43,330.3,272.88Z" style="fill: rgb(2, 70, 104); transform-origin: 316.63px 266.144px; --darkreader-inline-fill: #84d4fd;" id="elme3kai0mkl" class="animable" data-darkreader-inline-fill=""></path><path d="M320.6,292.9c-.07.24-1.73-.14-4.37-1-1.32-.41-2.89-.93-4.62-1.52s-3.5-1.53-5.41-2.4c-7.63-3.54-13.46-7-13.27-7.42s6.46,2.29,14,5.8c1.9.86,3.66,1.8,5.32,2.49s3.15,1.3,4.4,1.86C319.15,291.86,320.67,292.66,320.6,292.9Z" style="fill: rgb(2, 70, 104); transform-origin: 306.764px 286.744px; --darkreader-inline-fill: #84d4fd;" id="eleqeroyjs0iq" class="animable" data-darkreader-inline-fill=""></path><path d="M157.46,182.13s-20.86-12.94-32.27,15.25,10.53,32.82,10.53,32.82A187.63,187.63,0,0,0,157.46,182.13Z" style="fill: rgb(2, 70, 104); transform-origin: 139.681px 204.683px; --darkreader-inline-fill: #84d4fd;" id="elfj5yo2201rc" class="animable" data-darkreader-inline-fill=""></path><g id="ellrs0sk4n5mp"><g style="opacity: 0.5; transform-origin: 149.755px 210.065px;" class="animable"><path d="M179.65,148.53c.13,0-.17,1.94-.81,5.39s-1.6,8.44-2.94,14.58L173,178.37q-.79,2.65-1.63,5.49l-.85,2.87c-.31,1-.72,1.91-1.08,2.88l-4.71,12.16c-.41,1.06-.83,2.12-1.24,3.19s-1,2.09-1.47,3.15l-3.1,6.4-3.11,6.39c-.53,1-1,2.12-1.57,3.1s-1.17,2-1.74,2.95l-6.65,11.23c-.54.88-1,1.79-1.6,2.63l-1.73,2.45-3.32,4.68-6,8.37c-4,4.83-7.34,8.64-9.64,11.29a32.77,32.77,0,0,1-3.73,4,32.31,32.31,0,0,1,3.2-4.42c2.22-2.83,5.35-6.79,9.19-11.66l5.75-8.43,3.22-4.69c.56-.8,1.12-1.62,1.69-2.45s1-1.74,1.55-2.63L151,226.1l1.71-2.94c.59-1,1-2,1.55-3.08l3.08-6.35c1-2.15,2.07-4.26,3.09-6.35.48-1,1.06-2.06,1.46-3.12l1.25-3.16,4.78-12c.37-1,.79-1.89,1.11-2.85s.59-1.9.88-2.84l1.7-5.43,3.07-9.75,3.47-14.4A32.28,32.28,0,0,1,179.65,148.53Z" id="el80skwd07v3" class="animable" style="transform-origin: 149.755px 210.065px;"></path></g></g><g id="elo1edziffdje"><g style="opacity: 0.4; transform-origin: 241.914px 336.713px;" class="animable"><path d="M218.69,344c1.91,3.46,3.85,7,6.66,9.73S232,358.4,236,358s7.65-3.66,7.69-7.6c1.88,1.41,4.77.65,6.33-1.12s2.07-4.22,2.25-6.57c2.56,1.51,6.12.32,7.83-2.11a10.14,10.14,0,0,0,1-8.56,30.17,30.17,0,0,0-4.11-7.87c2,.16,4.06.3,5.82-.59s3-3.23,1.93-4.91a4.83,4.83,0,0,0-2.87-1.83c-3.09-1-5.25-1.74-8.47-1.37-.74,0,1.29,8.48-18.88,20.06C222.55,342.38,218.69,344,218.69,344Z" id="elx30nhjwh2h" class="animable" style="transform-origin: 241.914px 336.713px;"></path></g></g><path d="M264.11,356.2c0,.09-1.35-.17-3.53-.11a20,20,0,0,0-14.82,7.11c-1.41,1.66-2,2.87-2.13,2.82a3.08,3.08,0,0,1,.39-.88,17.51,17.51,0,0,1,1.45-2.18,19,19,0,0,1,15.11-7.24,15.23,15.23,0,0,1,2.6.24A2.73,2.73,0,0,1,264.11,356.2Z" style="fill: rgb(235, 153, 110); transform-origin: 253.87px 360.87px; --darkreader-inline-fill: #eb986d;" id="el9fud29sapy" class="animable" data-darkreader-inline-fill=""></path><path d="M220,338.59c3.25,3.12,5.47,6.57,8.88,9.71,1.55,1.43,4,4.13,6,4.49s3.4.09,4.22-1.85c.67-1.57-.53-3.72-1.35-5-2.17-3.41-4.25-6.07-5.87-8.72-.77-1.24.22-1.5.58-.92,1.56,1.62,3.9,3,5.3,4.79,1.92,2.41,2.26,5.62,7.28,4.6a4.38,4.38,0,0,0,1.86-.77c1.89-1.45,2-4,1.18-6a16.32,16.32,0,0,0-2.8-4.22c2.14,2.41,4.47,5,7.87,5.22a4.67,4.67,0,0,0,4.75-2.57c1-2.28-.43-4.49-1.88-6.27a65.68,65.68,0,0,0-8.53-8.72,6.53,6.53,0,0,0-4.14-1.53c-1.76,0-4,.32-5,1.84a6.85,6.85,0,0,0-1.37,5.23s-4.4-2.23-7.94.1a11.26,11.26,0,0,0-4.42,6.36Z" style="fill: rgb(255, 190, 157); transform-origin: 239.117px 336.878px; --darkreader-inline-fill: #ffb087;" id="eltfgx5h2o22" class="animable" data-darkreader-inline-fill=""></path><path d="M243.45,319.87a5.28,5.28,0,0,1-.62-6c.75-1.47,1.69-2.9,2.65-3.22,4.19-1.41,22.51,1.76,22.34,5.82s-1.51,6-11.44,4.57c-1.75-.25-4.49-.59-4.49-.59l-2.4,3.6Z" style="fill: rgb(255, 190, 157); transform-origin: 254.996px 317.18px; --darkreader-inline-fill: #ffb087;" id="elhse1gl3hbm" class="animable" data-darkreader-inline-fill=""></path><path d="M246.73,336.89a23.89,23.89,0,0,0-10.09-9.15,5.82,5.82,0,0,1,1.94.68,17.41,17.41,0,0,1,7.28,6.6A5.59,5.59,0,0,1,246.73,336.89Z" style="fill: rgb(235, 153, 110); transform-origin: 241.685px 332.315px; --darkreader-inline-fill: #eb986d;" id="elu7xicrjy5kt" class="animable" data-darkreader-inline-fill=""></path><path d="M249.81,324.4c-.09.08-1.3-.9-2.95-1.91a21.46,21.46,0,0,0-2.14-1.19c-.57-.26-.95-.33-.94-.41s.43-.12,1.06.07a9.7,9.7,0,0,1,2.3,1.09C248.83,323.08,249.94,324.29,249.81,324.4Z" style="fill: rgb(235, 153, 110); transform-origin: 246.8px 322.614px; --darkreader-inline-fill: #eb986d;" id="elwl6jc1q5h4i" class="animable" data-darkreader-inline-fill=""></path><path d="M252.89,320.62a7.83,7.83,0,0,1-3.53-.4A6.52,6.52,0,0,1,247.1,319c-.5-.43-.71-.78-.66-.83a15,15,0,0,0,3.07,1.52A26.31,26.31,0,0,1,252.89,320.62Z" style="fill: rgb(235, 153, 110); transform-origin: 249.661px 319.421px; --darkreader-inline-fill: #eb986d;" id="elzsgrqzcyzdf" class="animable" data-darkreader-inline-fill=""></path><path d="M235.09,341.92a13,13,0,0,1-1.67-2.17,19.43,19.43,0,0,0-4.27-4.86,8.59,8.59,0,0,0-6.06-1.6,10.28,10.28,0,0,0-2.55.81s.18-.21.59-.46a5.58,5.58,0,0,1,1.9-.72,8.54,8.54,0,0,1,6.42,1.55,17.32,17.32,0,0,1,4.28,5.07A16.28,16.28,0,0,1,235.09,341.92Z" style="fill: rgb(235, 153, 110); transform-origin: 227.815px 337.365px; --darkreader-inline-fill: #eb986d;" id="eljmwe7kbpc6a" class="animable" data-darkreader-inline-fill=""></path><path d="M249.1,382.42a56,56,0,0,1-7.48,1.07,54.22,54.22,0,0,1-7.55.56,56.34,56.34,0,0,1,7.49-1.07A56,56,0,0,1,249.1,382.42Z" style="fill: rgb(235, 153, 110); transform-origin: 241.585px 383.235px; --darkreader-inline-fill: #eb986d;" id="eljibgec0lqg" class="animable" data-darkreader-inline-fill=""></path></g><g id="freepik--Stars--inject-8" class="animable" style="transform-origin: 246.36px 191.56px;"><polygon points="406.63 49.84 407.76 51.91 409.82 53.04 407.76 54.17 406.63 56.23 405.5 54.17 403.44 53.04 405.5 51.91 406.63 49.84" style="fill: rgb(2, 70, 104); transform-origin: 406.63px 53.035px; --darkreader-inline-fill: #84d4fd;" id="el0cdd33gxps6d" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="430.24 101.01 431.37 103.08 433.43 104.21 431.37 105.34 430.24 107.4 429.11 105.34 427.04 104.21 429.11 103.08 430.24 101.01" style="fill: rgb(2, 70, 104); transform-origin: 430.235px 104.205px; --darkreader-inline-fill: #84d4fd;" id="elh6ih364ca8" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="51.9 237.53 53.03 239.6 55.1 240.73 53.03 241.85 51.9 243.92 50.77 241.85 48.71 240.73 50.77 239.6 51.9 237.53" style="fill: rgb(2, 70, 104); transform-origin: 51.905px 240.725px; --darkreader-inline-fill: #84d4fd;" id="elfbr9ja0trd7" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="375.66 62.56 378.27 67.33 383.04 69.94 378.27 72.54 375.66 77.31 373.06 72.54 368.29 69.94 373.06 67.33 375.66 62.56" style="fill: rgb(2, 70, 104); transform-origin: 375.665px 69.935px; --darkreader-inline-fill: #84d4fd;" id="el05bjzvfn69pj" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="73.06 205.1 75.66 209.85 80.42 212.45 75.66 215.06 73.06 219.81 70.46 215.06 65.7 212.45 70.46 209.85 73.06 205.1" style="fill: rgb(2, 70, 104); transform-origin: 73.06px 212.455px; --darkreader-inline-fill: #84d4fd;" id="elbqh56zv6qc" class="animable" data-darkreader-inline-fill=""></polygon><polygon points="436.66 318.56 439.26 323.32 444.01 325.92 439.26 328.52 436.66 333.28 434.06 328.52 429.3 325.92 434.06 323.32 436.66 318.56" style="fill: rgb(2, 70, 104); transform-origin: 436.655px 325.92px; --darkreader-inline-fill: #84d4fd;" id="el0niu93d1hw9" class="animable" data-darkreader-inline-fill=""></polygon></g><defs>     <filter id="active" height="200%">         <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>    </filter>    <filter id="hover" height="200%">        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>            <feColorMatrix type="matrix" values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 "></feColorMatrix>    </filter></defs></svg>
+
+    </div>
+
+    <div class="box box4">
+        <div class="content">
+            <span class="box-title">Do you provide any scripts with your templates?
+               </span>
+            <span class="box-text"> Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.
+            </span>
+        </div>
+    </div>
+    
+        <div class="box box3">
+            <div class="content">
+                <span class="box-title">What do I receive when I order a template from Zemez?
+                  </span>
+                <span class="box-text">
+                    After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased
+                </span>
+    
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="content">
+                <span class="box-title">What am I allowed to do with the templates?
+                   </span>
+                <span class="box-text"> You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).
+                    
+                    If you want to use any of already bought templates for another project of yours, you have to purchase that template once more in order to use the same design for your company website
+                </span>
+            </div>
+        </div>
+        <div class="box box1">
+            <div class="content">
+                <span class="box-title">In what formats are your templates available?
+                    </span>
+                <span class="box-text">Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®
+                </span>
+            </div>
+        </div>
+
+       
+    </div>
+
+
+<div id="p8"> 
+    <h6>WHO WE WORK WITH </h6>
+    <h1>Our Partners</h1>
+    <div class="logos" data-aos="flip-down"  data-aos-delay="400"
+    data-aos-duration="3000">
+        <img src="https://ld-wt73.template-help.com/wt_prod-21757/images/partners-2-73x78.png">
+        <img src="https://ld-wt73.template-help.com/wt_prod-21757/images/partners-1-88x77.png">
+        <img src="https://ld-wt73.template-help.com/wt_prod-21757/images/partners-3-96x62.png">
+        <img src="https://ld-wt73.template-help.com/wt_prod-21757/images/partners-5-87x76.png">
+        <img src= "https://ld-wt73.template-help.com/wt_prod-21757/images/partners-4-78x80.png">
+    </div>
+</div>
+<div id="p9">
+    <div class="p91">
+        <img src="https://zelt.app/wp-content/themes/zelt/assets/img/logo.svg" alt="" style="height: 50px; margin-top: -10px;">
+        <p>Since 1999, we have <br>been helping American <br>businesses thrive.</p>
+
+          <a href="signin.html">
+        
+  
+        <button class="but btn">
+            Sign in
+          </button>
+
+       </a>
+    </div>
+    <div class="p92"> 
+     <h2 style="margin-top: -20px;color: black;">Who We Are</h2>
+     <div class="links">
+     <a href="aboutus.html">About us</a>
+            <a href="ourteam.html" style="margin-top: 5px;">Our Team</a>
+            <a href="contactus.html" style="margin-top: 5px;">Contact Us</a>
+        </div>
+     
+    </div>
+
+    <div class="p93">
+        <h2 style="color: black;">Quick Links</h2>
+        <div class="links2">
+            <div class="linka">
+                <a href="signup.html">Sign Up</a>
+                <a href="#"style="margin-top: 5px;">News</a>
+                <a href="#"style="margin-top: 5px;">Privacy policy</a>
+                <a href="pricing.html"style="margin-top: 5px;">Pricing</a>
+            </div>
+            
+            <div class="linkb">
+                <a href="#">Features</a>
+                <a href="#"style="margin-top: 5px;">FAQ</a>
+                <a href="contactus.html"style="margin-top: 5px;">Contacts</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="p94">
+        <h2 style="margin-top: -40px;margin-bottom: 20px;color: black;">Get in Touch</h2>
+
+      <div class=" animate__animated animate__pulse animate__infinite"> <a href="#nav">nissidaniella@gmail.com</a>
+     </div>
+
+       <p style="margin-top: 5px; color: rgb(197, 197, 197);" >493-846-39</p>
+       <div></div>
+    </div>
+
+    
+   
+</div>
+
+<div id="footer">
+   
+    <p> 2024 Zelt. Privacy Policy</p>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
